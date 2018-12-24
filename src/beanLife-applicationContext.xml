@@ -14,7 +14,8 @@
     <bean
         id="myCoach"
         class="com.travis.springdemo.TrackCoach"
-        scope="prototype">
+        init-method="doMyStartupStuff"
+        destroy-method="doMyCleanupStuff">
         <constructor-arg ref="myFortuneService"/>
     </bean>
 
