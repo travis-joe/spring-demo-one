@@ -21,6 +21,8 @@
 
     <bean id="myCricketCoach" class="com.travis.springdemo.CricketCoach" >
         <property  name="fortuneService" ref="myFortune"/>
+        <property  name="emailAddress" value="thebestcoach@gamil.com"/>
+        <property  name="team" value="Sunrisers Hyderabad"/>
     </bean>
 
 </beans>
